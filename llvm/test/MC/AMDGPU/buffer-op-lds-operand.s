@@ -1,4 +1,4 @@
-// RUN: llvm-mc -triple=amdgcn-amd-amdhsa -mcpu=gfx950 --show-inst < %s | FileCheck %s
+// RUN: llvm-mc -triple=amdgpu9.50-amd-amdhsa --show-inst < %s | FileCheck %s
 
 // CHECK: .amdgcn_target "amdgcn-amd-amdhsa-unknown-gfx950"
 buffer_load_dword off, s[8:11], 0 lds
